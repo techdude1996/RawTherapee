@@ -331,6 +331,26 @@ void ImProcFunctions::updateColorProfiles (const Glib::ustring& monitorProfile, 
             }
         }
 
+        if (!softProofCreated && gamutCheck) {
+            flags = cmsFLAGS_NOOPTIMIZE | cmsFLAGS_NOCACHE | cmsFLAGS_GAMUTCHECK;
+            if (params->icm.outputBPC) {
+                flags |= cmsFLAGS_BLACKPOINTCOMPENSATION;
+            }
+                
+            cmsHPROFILE oprof = ICCStore::getInstance()->getProfile(params->icm.output);
+
+            if (oprof) {
+                monitorTransform =  
+                    cmsCreateProofingTransform(iprof, TYPE_Lab_FLT,
+                                               monitor,
+                                               TYPE_RGB_8,
+                                               oprof,
+                                               monitorIntent, monitorIntent,
+                                               flags);
+                softProofCreated = monitorTransform;
+            }
+        }
+
         if (!softProofCreated) {
             flags = cmsFLAGS_NOOPTIMIZE | cmsFLAGS_NOCACHE;
 

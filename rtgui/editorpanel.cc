@@ -222,7 +222,6 @@ private:
         spGamutCheck.set_tooltip_markup (M ("SOFTPROOF_GAMUTCHECK_TOOLTIP"));
 
         spGamutCheck.set_active (false);
-        spGamutCheck.set_sensitive (false);
         spGamutCheck.show ();
     }
 
@@ -302,7 +301,7 @@ private:
                 intentBox.setItemSensitivity (1, supportsRelativeColorimetric);
                 intentBox.setItemSensitivity (2, supportsAbsoluteColorimetric);
                 softProof.set_sensitive (canSProof);
-                spGamutCheck.set_sensitive (canSProof);
+                spGamutCheck.set_sensitive (true);
             } else {
                 intentBox.setItemSensitivity (0, true);
                 intentBox.setItemSensitivity (1, true);
@@ -362,12 +361,13 @@ private:
 #endif
         }
 
-        spGamutCheck.set_sensitive (softProof.get_sensitive() && softProof.get_active());
+        spGamutCheck.set_sensitive(false);
 
 #if !defined(__APPLE__) // monitor profile not supported on apple
 
         if (profileBox.get_active_row_number () > 0) {
 #endif
+            spGamutCheck.set_sensitive(true);
 
             if (processor) {
                 if (!noEvent) {

@@ -1229,7 +1229,7 @@ SAVEDLG_SUBSAMP_TOOLTIP;Best compression:\nJ:a:b 4:2:0\nh/v 2/2\nChroma halved h
 SAVEDLG_TIFFUNCOMPRESSED;Uncompressed TIFF
 SAVEDLG_WARNFILENAME;File will be named
 SHCSELECTOR_TOOLTIP;Click right mouse button to reset the position of those 3 sliders.
-SOFTPROOF_GAMUTCHECK_TOOLTIP;If active, indicates in grey the pixels which have out of gamut colors from the Printer profile.
+SOFTPROOF_GAMUTCHECK_TOOLTIP;If active, indicates in bright green the pixels which have out of gamut colors\nfrom the Printer (if soft-proofing is active) or Output (if soft-proofing is off) profile.
 SOFTPROOF_TOOLTIP;Soft-proofing\nIf active, let you simulate the printer's output by using the Printer profile set in Preferences > Color Management.
 THRESHOLDSELECTOR_B;Bottom
 THRESHOLDSELECTOR_BL;Bottom-left
