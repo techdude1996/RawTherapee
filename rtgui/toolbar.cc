@@ -46,8 +46,8 @@ ToolBar::ToolBar () : showColPickers(true), listener (nullptr), pickerListener(n
 
     pack_start (*wbTool);
 
-    showcolpickersimg.reset(new RTImage("colorPickers-show.png"));
-    hidecolpickersimg.reset(new RTImage("colorPickers-hide.png"));
+    showcolpickersimg.reset(new RTImage("color-picker-show.png"));
+    hidecolpickersimg.reset(new RTImage("color-picker-hide.png"));
 
     colPickerTool = Gtk::manage (new Gtk::ToggleButton ());
     colPickerTool->add (*showcolpickersimg);

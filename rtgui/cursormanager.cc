@@ -51,7 +51,7 @@ void CursorManager::init (Glib::RefPtr<Gdk::Window> mainWindow)
     cAdd = Gdk::Cursor::create (display, Gdk::PLUS);
     cWait = Gdk::Cursor::create (display, Gdk::CLOCK);
 
-    Glib::RefPtr<Gdk::Pixbuf> hand = RTImage::createFromFile ("cross.png");
+    Glib::RefPtr<Gdk::Pixbuf> hand = RTImage::createFromFile ("crosshair1.png");
     Glib::RefPtr<Gdk::Pixbuf> close_hand = RTImage::createFromFile ("closedhand.png");
     Glib::RefPtr<Gdk::Pixbuf> wbpick = RTImage::createFromFile ("gtk-color-picker-small.png");
     Glib::RefPtr<Gdk::Pixbuf> cpick = RTImage::createFromFile ("gtk-color-picker-add.png");
