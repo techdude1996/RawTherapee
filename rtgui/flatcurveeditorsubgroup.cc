@@ -71,7 +71,7 @@ FlatCurveEditorSubGroup::FlatCurveEditorSubGroup (CurveEditorGroup* prt, Glib::u
     pasteCPoints = Gtk::manage (new Gtk::Button ());
     initButton(*pasteCPoints,  Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
     loadCPoints = Gtk::manage (new Gtk::Button ());
-    initButton(*loadCPoints,  Glib::ustring("gtk-open.png"), Gtk::ALIGN_END, false);
+    initButton(*loadCPoints,  Glib::ustring("folder-open.png"), Gtk::ALIGN_END, false);
     saveCPoints = Gtk::manage (new Gtk::Button ());
     initButton(*saveCPoints,  Glib::ustring("gtk-save-large.png"), Gtk::ALIGN_END, false);
 

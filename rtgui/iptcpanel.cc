@@ -334,7 +334,7 @@ IPTCPanel::IPTCPanel ()
 
     file = Gtk::manage( new Gtk::Button () );  // M("IPTCPANEL_EMBEDDED")
     file->get_style_context()->add_class("MiddleH");
-    file->set_image (*Gtk::manage(new RTImage ("gtk-open.png")));
+    file->set_image (*Gtk::manage(new RTImage ("folder-open.png")));
     setExpandAlignProperties(file, true, false, Gtk::ALIGN_FILL, Gtk::ALIGN_FILL);
     bbox->attach_next_to (*file, Gtk::POS_RIGHT, 1, 1);
 

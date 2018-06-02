@@ -63,7 +63,7 @@ ProfilePanel::ProfilePanel () : storedPProfile(nullptr), lastFilename(""), image
     setExpandAlignProperties(profiles, true, true, Gtk::ALIGN_FILL, Gtk::ALIGN_FILL);
 
     load = Gtk::manage (new Gtk::Button ());
-    load->add (*Gtk::manage (new RTImage ("gtk-open.png")));
+    load->add (*Gtk::manage (new RTImage ("folder-open.png")));
     load->get_style_context()->add_class("Left");
     load->set_margin_left(2);
     setExpandAlignProperties(load, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);

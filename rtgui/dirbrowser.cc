@@ -109,8 +109,8 @@ DirBrowser::~DirBrowser()
 void DirBrowser::fillDirTree ()
 {
 
-    openfolder = RTImage::createFromFile ("gtk-open.png");
-    closedfolder = RTImage::createFromFile ("folder.png");
+    openfolder = RTImage::createFromFile ("folder-open.png");
+    closedfolder = RTImage::createFromFile ("folder-closed.png");
     icdrom = RTImage::createFromFile ("drive-optical.png");
     ifloppy = RTImage::createFromFile ("drive-removable-media.png");
     ihdd = RTImage::createFromFile ("drive-harddisk.png");

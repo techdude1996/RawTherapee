@@ -76,7 +76,7 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     pasteCustom = Gtk::manage (new Gtk::Button ());
     initButton(*pasteCustom, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
     loadCustom = Gtk::manage (new Gtk::Button ());
-    initButton(*loadCustom, Glib::ustring("gtk-open.png"), Gtk::ALIGN_END, false);
+    initButton(*loadCustom, Glib::ustring("folder-open.png"), Gtk::ALIGN_END, false);
     saveCustom = Gtk::manage (new Gtk::Button ());
     initButton(*saveCustom, Glib::ustring("gtk-save-large.png"), Gtk::ALIGN_END, false);
 
@@ -153,7 +153,7 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     pasteNURBS = Gtk::manage (new Gtk::Button ());
     initButton(*pasteNURBS, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
     loadNURBS = Gtk::manage (new Gtk::Button ());
-    initButton(*loadNURBS, Glib::ustring("gtk-open.png"), Gtk::ALIGN_END, false);
+    initButton(*loadNURBS, Glib::ustring("folder-open.png"), Gtk::ALIGN_END, false);
     saveNURBS = Gtk::manage (new Gtk::Button ());
     initButton(*saveNURBS, Glib::ustring("gtk-save-large.png"), Gtk::ALIGN_END, false);
 
@@ -231,7 +231,7 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     pasteParam = Gtk::manage (new Gtk::Button ());
     initButton(*pasteParam, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
     loadParam = Gtk::manage (new Gtk::Button ());
-    initButton(*loadParam, Glib::ustring("gtk-open.png"), Gtk::ALIGN_END, false);
+    initButton(*loadParam, Glib::ustring("folder-open.png"), Gtk::ALIGN_END, false);
     saveParam = Gtk::manage (new Gtk::Button ());
     initButton(*saveParam, Glib::ustring("gtk-save-large.png"), Gtk::ALIGN_END, false);
 

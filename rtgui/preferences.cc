@@ -1249,7 +1249,7 @@ Gtk::Widget* Preferences::getFileBrowserPanel ()
     startupdir = Gtk::manage ( new Gtk::Entry () );
 
     Gtk::Button* sdselect = Gtk::manage ( new Gtk::Button () );
-    sdselect->set_image (*Gtk::manage (new RTImage ("gtk-open.png")));
+    sdselect->set_image (*Gtk::manage (new RTImage ("folder-open.png")));
 
     Gtk::RadioButton::Group opts = sdcurrent->get_group();
     sdlast->set_group (opts);
