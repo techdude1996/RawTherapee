@@ -236,10 +236,13 @@ FileCatalog::FileCatalog (CoarsePanel* cp, ToolBar* tb, FilePanel* filepanel) :
     fltrRecentlySavedBox = Gtk::manage (new Gtk::HBox());
 
     // bEdited
-    iEdited[0] = new RTImage ("editednot-small.png");
-    igEdited[0] = new RTImage ("editednotg-small.png");
-    iEdited[1] = new RTImage ("edited-small.png");
-    igEdited[1] = new RTImage ("editedg-small.png");
+    // TODO The "g" variant was the more transparent variant of the icon, used
+    // when the button was not toggled. Simplify this, change to ordinary
+    // togglebutton, use CSS for opacity change.
+    iEdited[0] = new RTImage ("tick-hollow-small.png");
+    igEdited[0] = new RTImage ("tick-hollow-small.png");
+    iEdited[1] = new RTImage ("tick-small.png");
+    igEdited[1] = new RTImage ("tick-small.png");
 
     for (int i = 0; i < 2; i++) {
         iEdited[i]->show ();
@@ -257,10 +260,13 @@ FileCatalog::FileCatalog (CoarsePanel* cp, ToolBar* tb, FilePanel* filepanel) :
     bEdited[1]->set_tooltip_markup (M("FILEBROWSER_SHOWEDITEDHINT"));
 
     // RecentlySaved
-    iRecentlySaved[0] = new RTImage ("savednot.png");
-    igRecentlySaved[0] = new RTImage ("savednotg.png");
-    iRecentlySaved[1] = new RTImage ("saved.png");
-    igRecentlySaved[1] = new RTImage ("savedg.png");
+    // TODO The "g" variant was the more transparent variant of the icon, used
+    // when the button was not toggled. Simplify this, change to ordinary
+    // togglebutton, use CSS for opacity change.
+    iRecentlySaved[0] = new RTImage ("saved-no.png");
+    igRecentlySaved[0] = new RTImage ("saved-no.png");
+    iRecentlySaved[1] = new RTImage ("saved-yes.png");
+    igRecentlySaved[1] = new RTImage ("saved-yes.png");
 
     for (int i = 0; i < 2; i++) {
         iRecentlySaved[i]->show ();

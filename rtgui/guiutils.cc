@@ -553,11 +553,11 @@ void ExpanderBox::hideBox()
 
 void MyExpander::init()
 {
-    inconsistentPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("expanderInconsistent.png"));
-    enabledPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("expanderEnabled.png"));
-    disabledPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("expanderDisabled.png"));
-    openedPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("expanderOpened.png"));
-    closedPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("expanderClosed.png"));
+    inconsistentPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("power-inconsistent.png"));
+    enabledPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("power-on.png"));
+    disabledPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("power-off.png"));
+    openedPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("expander-opened.png"));
+    closedPBuf = Gdk::Pixbuf::create_from_file(rtengine::findIconAbsolutePath("expander-closed.png"));
 }
 
 MyExpander::MyExpander(bool useEnabled, Gtk::Widget* titleWidget) :
