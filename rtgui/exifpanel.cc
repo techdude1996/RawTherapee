@@ -48,9 +48,9 @@ ExifPanel::ExifPanel () : idata (nullptr)
     exifTree->set_grid_lines (Gtk::TREE_VIEW_GRID_LINES_NONE);
     exifTree->set_row_separator_func (sigc::mem_fun(*this, &ExifPanel::rowSeperatorFunc));
 
-    delicon = RTImage::createFromFile ("gtk-close.png");
-    keepicon = RTImage::createFromFile ("gtk-apply.png");
-    editicon = RTImage::createFromFile ("gtk-add.png");
+    delicon = RTImage::createFromFile ("cross-small.png");
+    keepicon = RTImage::createFromFile ("tick-small.png");
+    editicon = RTImage::createFromFile ("add-small.png");
 
     Gtk::TreeView::Column *viewcol = Gtk::manage (new Gtk::TreeView::Column ("Field Name"));
     Gtk::CellRendererPixbuf* render_pb = Gtk::manage (new Gtk::CellRendererPixbuf ());

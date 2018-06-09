@@ -72,7 +72,7 @@ ProfilePanel::ProfilePanel () : storedPProfile(nullptr), lastFilename(""), image
     save->get_style_context()->add_class("MiddleH");
     setExpandAlignProperties(save, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
     copy = Gtk::manage (new Gtk::Button ());
-    copy->add (*Gtk::manage (new RTImage ("edit-copy.png")));
+    copy->add (*Gtk::manage (new RTImage ("copy.png")));
     copy->get_style_context()->add_class("MiddleH");
     setExpandAlignProperties(copy, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
     paste = Gtk::manage (new Gtk::Button ());

@@ -88,7 +88,7 @@ History::History (bool bookmarkSupport) : historyVPaned(nullptr), blistener(null
     //addBookmark->get_style_context()->set_junction_sides(Gtk::JUNCTION_RIGHT);
     addBookmark->get_style_context()->add_class("Left");
     addBookmark->set_tooltip_markup (M("HISTORY_NEWSNAPSHOT_TOOLTIP"));
-    Gtk::Image* addimg = Gtk::manage (new RTImage ("gtk-add.png"));
+    Gtk::Image* addimg = Gtk::manage (new RTImage ("add-small.png"));
     addBookmark->set_image (*addimg);
     ahbox->pack_start (*addBookmark);
 

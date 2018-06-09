@@ -112,9 +112,9 @@ IPTCPanel::IPTCPanel ()
     setExpandAlignProperties(addKW, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
     delKW = Gtk::manage( new Gtk::Button () );
     setExpandAlignProperties(delKW, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
-    Gtk::Image* addKWImg = Gtk::manage( new RTImage ("list-add-small.png") );
+    Gtk::Image* addKWImg = Gtk::manage( new RTImage ("add-small.png") );
     setExpandAlignProperties(addKWImg, false, false, Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER);
-    Gtk::Image* delKWImg = Gtk::manage( new RTImage ("list-remove-red-small.png") );
+    Gtk::Image* delKWImg = Gtk::manage( new RTImage ("remove-small.png") );
     setExpandAlignProperties(delKWImg, false, false, Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER);
     addKW->add (*addKWImg);
     delKW->add (*delKWImg);
@@ -162,9 +162,9 @@ IPTCPanel::IPTCPanel ()
     setExpandAlignProperties(addSC, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
     delSC = Gtk::manage( new Gtk::Button () );
     setExpandAlignProperties(delSC, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
-    Gtk::Image* addSCImg = Gtk::manage( new RTImage ("list-add-small.png") );
+    Gtk::Image* addSCImg = Gtk::manage( new RTImage ("add-small.png") );
     setExpandAlignProperties(addSCImg, false, false, Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER);
-    Gtk::Image* delSCImg = Gtk::manage( new RTImage ("list-remove-red-small.png") );
+    Gtk::Image* delSCImg = Gtk::manage( new RTImage ("remove-small.png") );
     setExpandAlignProperties(delSCImg, false, false, Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER);
     addSC->add (*addSCImg);
     delSC->add (*delSCImg);
@@ -340,7 +340,7 @@ IPTCPanel::IPTCPanel ()
 
     copy = Gtk::manage( new Gtk::Button () );
     copy->get_style_context()->add_class("MiddleH");
-    copy->set_image (*Gtk::manage(new RTImage ("edit-copy.png")));
+    copy->set_image (*Gtk::manage(new RTImage ("copy.png")));
     setExpandAlignProperties(copy, true, false, Gtk::ALIGN_FILL, Gtk::ALIGN_FILL);
     bbox->attach_next_to (*copy, Gtk::POS_RIGHT, 1, 1);
 

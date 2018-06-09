@@ -104,7 +104,7 @@ FileCatalog::FileCatalog (CoarsePanel* cp, ToolBar* tb, FilePanel* filepanel) :
     BrowsePath->signal_key_press_event().connect(sigc::mem_fun(*this, &FileCatalog::BrowsePath_key_pressed));
 
     //setup Query
-    iQueryClear = new RTImage("gtk-close-small.png");
+    iQueryClear = new RTImage("cancel-small.png");
     Gtk::Label* labelQuery = Gtk::manage(new Gtk::Label(M("FILEBROWSER_QUERYLABEL")));
     Query = Gtk::manage(new Gtk::Entry ()); // cannot use Gtk::manage here as FileCatalog::getFilter will fail on Query->get_text()
     Query->set_text("");
@@ -165,8 +165,8 @@ FileCatalog::FileCatalog (CoarsePanel* cp, ToolBar* tb, FilePanel* filepanel) :
     fltrRankbox = Gtk::manage (new Gtk::HBox());
     fltrLabelbox = Gtk::manage (new Gtk::HBox());
 
-    iUnRanked = new RTImage ("ratednot.png");
-    igUnRanked = new RTImage ("ratednotg.png");
+    iUnRanked = new RTImage ("star-gold-hollow.png");
+    igUnRanked = new RTImage ("star-hollow.png");
     bUnRanked = Gtk::manage( new Gtk::ToggleButton () );
     bUnRanked->set_active (false);
     bUnRanked->set_image (*igUnRanked);
@@ -177,8 +177,8 @@ FileCatalog::FileCatalog (CoarsePanel* cp, ToolBar* tb, FilePanel* filepanel) :
     bUnRanked->signal_button_press_event().connect (sigc::mem_fun(*this, &FileCatalog::capture_event), false);
 
     for (int i = 0; i < 5; i++) {
-        iranked[i] = new RTImage ("rated.png");
-        igranked[i] = new RTImage ("grayrated.png");
+        iranked[i] = new RTImage ("star-gold.png");
+        igranked[i] = new RTImage ("star.png");
         iranked[i]->show ();
         igranked[i]->show ();
         bRank[i] = Gtk::manage( new Gtk::ToggleButton () );
@@ -239,10 +239,10 @@ FileCatalog::FileCatalog (CoarsePanel* cp, ToolBar* tb, FilePanel* filepanel) :
     // TODO The "g" variant was the more transparent variant of the icon, used
     // when the button was not toggled. Simplify this, change to ordinary
     // togglebutton, use CSS for opacity change.
-    iEdited[0] = new RTImage ("tick-hollow-small.png");
-    igEdited[0] = new RTImage ("tick-hollow-small.png");
-    iEdited[1] = new RTImage ("tick-small.png");
-    igEdited[1] = new RTImage ("tick-small.png");
+    iEdited[0] = new RTImage ("tick-green-hollow-small.png");
+    igEdited[0] = new RTImage ("tick-green-hollow-small.png");
+    iEdited[1] = new RTImage ("tick-green-small.png");
+    igEdited[1] = new RTImage ("tick-green-small.png");
 
     for (int i = 0; i < 2; i++) {
         iEdited[i]->show ();
@@ -290,8 +290,8 @@ FileCatalog::FileCatalog (CoarsePanel* cp, ToolBar* tb, FilePanel* filepanel) :
     buttonBar->pack_start (*Gtk::manage(new Gtk::VSeparator), Gtk::PACK_SHRINK);
 
     // Trash
-    iTrashEmpty = new RTImage("trash-show-empty.png") ;
-    iTrashFull  = new RTImage("trash-show-full.png") ;
+    iTrashEmpty = new RTImage("trash.png") ;
+    iTrashFull  = new RTImage("trash-show.png") ;
 
     bTrash = Gtk::manage( new Gtk::ToggleButton () );
     bTrash->set_image (*iTrashEmpty);

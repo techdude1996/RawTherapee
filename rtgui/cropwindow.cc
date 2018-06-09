@@ -61,7 +61,7 @@ CropWindow::CropWindow (ImageArea* parent, bool isLowUpdatePriority_, bool isDet
     bZoomIn  = new LWButton (RTImage::createFromPng ("gtk-zoom-in-small.png"),  1, nullptr, LWButton::Left, LWButton::Center, "Zoom In");
     bZoom100 = new LWButton (RTImage::createFromPng ("gtk-zoom-100-small.png"), 2, nullptr, LWButton::Left, LWButton::Center, "Zoom 100/%");
     //bZoomFit = new LWButton (RTImage::createFromPng ("gtk-zoom-fit.png"), 3, NULL, LWButton::Left, LWButton::Center, "Zoom Fit");
-    bClose   = new LWButton (RTImage::createFromPng ("gtk-close-small.png"),    4, nullptr, LWButton::Right, LWButton::Center, "Close");
+    bClose   = new LWButton (RTImage::createFromPng ("cancel-small.png"),    4, nullptr, LWButton::Right, LWButton::Center, "Close");
 
     buttonSet.add (bZoomOut);
     buttonSet.add (bZoomIn);

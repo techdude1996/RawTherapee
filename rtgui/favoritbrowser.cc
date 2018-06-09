@@ -55,7 +55,7 @@ FavoritBrowser::FavoritBrowser () : listener (NULL), lastSelectedDir ("")
     add->set_vexpand(false);
     add->set_halign(Gtk::ALIGN_FILL);
     add->set_valign(Gtk::ALIGN_START);
-    add->set_image (*Gtk::manage (new RTImage ("gtk-add.png")));
+    add->set_image (*Gtk::manage (new RTImage ("add-small.png")));
     add->get_style_context()->add_class("Left");
     del = Gtk::manage (new Gtk::Button ());
     del->set_tooltip_text(M("MAIN_FRAME_PLACES_DEL"));

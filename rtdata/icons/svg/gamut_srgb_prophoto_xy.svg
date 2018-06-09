@@ -18,7 +18,7 @@
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="0.92.2 2405546, 2018-03-11"
-   sodipodi:docname="tick-large.svg">
+   sodipodi:docname="gamut_srgb_prophoto_xy.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#E0E1E2"
@@ -27,7 +27,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="33.75"
-     inkscape:cx="12"
+     inkscape:cx="11.97037"
      inkscape:cy="12"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -99,11 +99,25 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
-    <path
-       sodipodi:nodetypes="ccccccc"
-       inkscape:connector-curvature="0"
-       id="path2996-6"
-       d="M 4.6666624,10.166665 8.3333305,13.833335 19.333336,2.833329 23.000006,6.4999972 8.3333305,21.166671 0.99999442,13.833335 Z"
-       style="opacity:0.7;fill:#2a7fff;fill-opacity:1;stroke:none;stroke-width:2.30911016" />
+    <g
+       transform="matrix(1.1034771,0,0,1.1034771,1287.5938,-472.77494)"
+       id="g18188"
+       style="stroke-width:0.90622628">
+      <path
+         inkscape:connector-curvature="0"
+         id="path17362"
+         d="m -1147.2495,442.9438 c -4.487,2.05699 -8.9739,4.11398 -13.4609,6.17097 -1.6645,-1.234 -2.2083,-3.36289 -2.7405,-5.2582 -0.8927,-3.67059 -1.2927,-7.46303 -1.2498,-11.2375 0.072,-1.02629 0.2819,-2.2431 1.211,-2.84351 1.1689,-0.51143 2.3235,0.379 3.2265,1.03528 4.7512,3.58083 8.6565,8.1118 13.0137,12.13296 z"
+         style="opacity:0.7;fill:#2a7fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.03138535px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path17368"
+         d="m -1163.9993,449.28431 2.9837,-19.93699 13.7322,13.56257 z"
+         style="opacity:0.7;fill:#2a7fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.03138535px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path17370"
+         d="m -1161.1173,447.58899 3.8654,-12.47758 7.8663,6.20488 z"
+         style="opacity:0.7;fill:#2a7fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.03138535px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
   </g>
 </svg>

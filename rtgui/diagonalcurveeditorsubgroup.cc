@@ -72,7 +72,7 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     initButton(*editCustom, Glib::ustring("crosshair1-adjust.png"), Gtk::ALIGN_START, false, "EDIT_PIPETTE_TOOLTIP");
     editCustom->hide();
     copyCustom = Gtk::manage (new Gtk::Button ());
-    initButton(*copyCustom, Glib::ustring("edit-copy.png"), Gtk::ALIGN_END, true);
+    initButton(*copyCustom, Glib::ustring("copy.png"), Gtk::ALIGN_END, true);
     pasteCustom = Gtk::manage (new Gtk::Button ());
     initButton(*pasteCustom, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
     loadCustom = Gtk::manage (new Gtk::Button ());
@@ -149,7 +149,7 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     initButton(*editNURBS, Glib::ustring("crosshair1-adjust.png"), Gtk::ALIGN_START, false, "EDIT_PIPETTE_TOOLTIP");
     editNURBS->hide();
     copyNURBS = Gtk::manage (new Gtk::Button ());
-    initButton(*copyNURBS, Glib::ustring("edit-copy.png"), Gtk::ALIGN_END, true);
+    initButton(*copyNURBS, Glib::ustring("copy.png"), Gtk::ALIGN_END, true);
     pasteNURBS = Gtk::manage (new Gtk::Button ());
     initButton(*pasteNURBS, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
     loadNURBS = Gtk::manage (new Gtk::Button ());
@@ -227,7 +227,7 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     initButton(*editParam, Glib::ustring("crosshair1-adjust.png"), Gtk::ALIGN_START, false, "EDIT_PIPETTE_TOOLTIP");
     editParam->hide();
     copyParam = Gtk::manage (new Gtk::Button ());
-    initButton(*copyParam, Glib::ustring("edit-copy.png"), Gtk::ALIGN_END, true);
+    initButton(*copyParam, Glib::ustring("copy.png"), Gtk::ALIGN_END, true);
     pasteParam = Gtk::manage (new Gtk::Button ());
     initButton(*pasteParam, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
     loadParam = Gtk::manage (new Gtk::Button ());

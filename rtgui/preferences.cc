@@ -1351,8 +1351,8 @@ Gtk::Widget* Preferences::getFileBrowserPanel ()
     delExt->set_tooltip_text (M ("PREFERENCES_PARSEDEXTDELHINT"));
     moveExtUp->set_tooltip_text (M ("PREFERENCES_PARSEDEXTUPHINT"));
     moveExtDown->set_tooltip_text (M ("PREFERENCES_PARSEDEXTDOWNHINT"));
-    Gtk::Image* addExtImg = Gtk::manage ( new RTImage ("list-add-small.png") );
-    Gtk::Image* delExtImg = Gtk::manage ( new RTImage ("list-remove-red-small.png") );
+    Gtk::Image* addExtImg = Gtk::manage ( new RTImage ("add-small.png") );
+    Gtk::Image* delExtImg = Gtk::manage ( new RTImage ("remove-small.png") );
     Gtk::Image* moveExtUpImg = Gtk::manage ( new RTImage ("arrow-up-small.png") );
     Gtk::Image* moveExtDownImg = Gtk::manage ( new RTImage ("arrow-down-small.png") );
     addExt->add (*addExtImg);

@@ -18,7 +18,7 @@
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="0.92.2 2405546, 2018-03-11"
-   sodipodi:docname="tick-large.svg">
+   sodipodi:docname="gamut-warning.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#E0E1E2"
@@ -26,7 +26,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="33.75"
+     inkscape:zoom="33.833333"
      inkscape:cx="12"
      inkscape:cy="12"
      inkscape:document-units="px"
@@ -100,10 +100,25 @@
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <path
-       sodipodi:nodetypes="ccccccc"
        inkscape:connector-curvature="0"
-       id="path2996-6"
-       d="M 4.6666624,10.166665 8.3333305,13.833335 19.333336,2.833329 23.000006,6.4999972 8.3333305,21.166671 0.99999442,13.833335 Z"
-       style="opacity:0.7;fill:#2a7fff;fill-opacity:1;stroke:none;stroke-width:2.30911016" />
+       style="opacity:0.7;fill:#2a7fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.03463303px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 18.039793,11.881796 -0.528518,5.815841 c 1.145775,1.419431 2.443672,3.037737 4.273256,5.302362 h 1.213872 v -6.217601 c -1.649954,-1.636756 -3.297819,-3.275716 -4.95861,-4.900602 z"
+       id="path5330" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:0.7;fill:#2a7fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.03463303px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 4.1801719,1.0085159 C 3.7423076,0.97525596 3.2986891,1.0373834 2.8524331,1.2319542 1.4336335,2.1488066 1.1147212,4.0067107 1.0047706,5.5739614 0.93925576,11.337913 1.5472,17.130439 2.910441,22.735741 c 0.024417,0.08695 0.061442,0.176708 0.085938,0.264258 H 4.0340778 C 2.9671417,18.658909 2.4342314,14.202944 2.489346,9.7569835 2.5881014,8.4662896 2.877903,6.9348654 4.1522423,6.1798229 5.7555236,5.536617 7.3171946,6.7283685 8.3932722,7.7567818 9.332748,8.6546431 9.9701583,9.2978243 10.674921,9.9976098 10.518318,8.7046654 10.354987,7.6356703 10.191521,6.9059972 9.9285335,5.7517854 9.7377339,4.9829047 9.6329241,4.2634102 9.0224679,3.7710536 8.4064723,3.286253 7.7788177,2.8132098 6.7445953,2.0615763 5.4937645,1.108462 4.1801719,1.0085159 Z m 13.9197771,10.2008181 -0.06016,0.672462 z"
+       id="path17362" />
+    <text
+       id="text389"
+       y="24.636877"
+       x="6.0531197"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:33.52387238px;line-height:125%;font-family:'AR PL UKai TW';-inkscape-font-specification:'AR PL UKai TW';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;opacity:0.8;fill:#2a7fff;fill-opacity:1;stroke:none;stroke-width:0.99999982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'AR PL UKai TW';-inkscape-font-specification:'AR PL UKai TW';writing-mode:lr-tb;fill:#2a7fff;fill-opacity:1;stroke-width:0.99999982px"
+         y="24.636877"
+         x="6.0531197"
+         id="tspan387"
+         sodipodi:role="line">!</tspan></text>
   </g>
 </svg>

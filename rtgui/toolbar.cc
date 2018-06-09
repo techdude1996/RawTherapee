@@ -38,7 +38,7 @@ ToolBar::ToolBar () : showColPickers(true), listener (nullptr), pickerListener(n
     pack_start (*handTool);
 
     wbTool = Gtk::manage (new Gtk::ToggleButton ());
-    Gtk::Image* wbimg = Gtk::manage (new RTImage ("gtk-color-picker.png"));
+    Gtk::Image* wbimg = Gtk::manage (new RTImage ("color-picker.png"));
     wbTool->add (*wbimg);
     wbimg->show ();
     wbTool->set_relief(Gtk::RELIEF_NONE);

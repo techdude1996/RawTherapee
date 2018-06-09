@@ -176,7 +176,7 @@ void EditWindow::addEditorPanel (EditorPanel* ep, const std::string &name)
     hb->pack_start (*Gtk::manage (new Gtk::Label (Glib::path_get_basename (name))));
     hb->set_tooltip_markup (name);
     Gtk::Button* closeb = Gtk::manage (new Gtk::Button ());
-    closeb->set_image (*Gtk::manage(new RTImage ("gtk-close.png")));
+    closeb->set_image (*Gtk::manage(new RTImage ("cancel-small.png")));
     closeb->set_relief (Gtk::RELIEF_NONE);
     closeb->set_focus_on_click (false);
 
