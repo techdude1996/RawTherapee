@@ -166,7 +166,7 @@ void Adjuster::addAutoButton (Glib::ustring tooltip)
 {
     if (!automatic) {
         automatic = new Gtk::CheckButton ();
-        //automatic->add (*Gtk::manage (new RTImage ("processing.png")));
+        //automatic->add (*Gtk::manage (new RTImage ("gears.png")));
         automatic->set_tooltip_markup(tooltip.length() ? Glib::ustring::compose("<b>%1</b>\n\n%2", M("GENERAL_AUTO"), tooltip) : M("GENERAL_AUTO"));
         setExpandAlignProperties(automatic, false, false, Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER);
         autoChange = automatic->signal_toggled().connect( sigc::mem_fun(*this, &Adjuster::autoToggled) );

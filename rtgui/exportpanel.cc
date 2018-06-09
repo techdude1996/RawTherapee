@@ -178,7 +178,7 @@ ExportPanel::ExportPanel () : listener (nullptr)
     // Buttons
     btnFastExport =  Gtk::manage ( new Gtk::Button () );
     btnFastExport->set_tooltip_text (M ("EXPORT_PUTTOQUEUEFAST"));
-    btnFastExport->set_image (*Gtk::manage (new RTImage ("processing.png")));
+    btnFastExport->set_image (*Gtk::manage (new RTImage ("gears.png")));
     pack_start (*btnFastExport, Gtk::PACK_SHRINK, 4);
 
 

@@ -206,7 +206,7 @@ void BatchQueuePanel::updateTab (int qsize, int forceOrientation)
         Gtk::Label* l;
 
         if(!qsize ) {
-            grid->attach_next_to(*Gtk::manage (new RTImage ("processing.png")), Gtk::POS_TOP, 1, 1);
+            grid->attach_next_to(*Gtk::manage (new RTImage ("gears.png")), Gtk::POS_TOP, 1, 1);
             l = Gtk::manage (new Gtk::Label (Glib::ustring(" ") + M("MAIN_FRAME_BATCHQUEUE")) );
         } else if (qStartStop->get_active()) {
             grid->attach_next_to(*Gtk::manage (new RTImage ("processing-play.png")), Gtk::POS_TOP, 1, 1);
@@ -226,7 +226,7 @@ void BatchQueuePanel::updateTab (int qsize, int forceOrientation)
         }
     } else {
         if (!qsize ) {
-            grid->attach_next_to(*Gtk::manage (new RTImage ("processing.png")), Gtk::POS_RIGHT, 1, 1);
+            grid->attach_next_to(*Gtk::manage (new RTImage ("gears.png")), Gtk::POS_RIGHT, 1, 1);
             grid->attach_next_to(*Gtk::manage (new Gtk::Label (M("MAIN_FRAME_BATCHQUEUE") )), Gtk::POS_RIGHT, 1, 1);
         } else if (qStartStop->get_active()) {
             grid->attach_next_to(*Gtk::manage (new RTImage ("processing-play.png")), Gtk::POS_RIGHT, 1, 1);

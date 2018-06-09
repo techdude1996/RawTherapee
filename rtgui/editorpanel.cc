@@ -648,7 +648,7 @@ EditorPanel::EditorPanel (FilePanel* filePanel)
     saveimgas->set_tooltip_markup (M ("MAIN_BUTTON_SAVE_TOOLTIP"));
     setExpandAlignProperties (saveimgas, false, false, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
 
-    Gtk::Image *queueButtonImage = Gtk::manage (new RTImage ("processing.png"));
+    Gtk::Image *queueButtonImage = Gtk::manage (new RTImage ("gears.png"));
     queueimg = Gtk::manage (new Gtk::Button ());
     queueimg->add (*queueButtonImage);
     queueimg->set_tooltip_markup (M ("MAIN_BUTTON_PUTTOQUEUE_TOOLTIP"));

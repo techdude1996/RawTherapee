@@ -58,7 +58,7 @@ FileBrowserEntry::FileBrowserEntry (Thumbnail* thm, const Glib::ustring& fname)
     if (!iconsLoaded) {
         editedIcon = RTImage::createFromFile ("edited.png");
         recentlySavedIcon = RTImage::createFromFile ("recent-save.png");
-        enqueuedIcon = RTImage::createFromFile ("processing.png");
+        enqueuedIcon = RTImage::createFromFile ("gears.png");
         hdr = RTImage::createFromFile ("HDR-thumbnail.png");
         ps = RTImage::createFromFile ("PixelShift-thumbnail.png");
         iconsLoaded = true;

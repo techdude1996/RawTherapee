@@ -67,7 +67,7 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     }
 
     editPointCustom = Gtk::manage (new Gtk::ToggleButton ());
-    initButton(*editPointCustom, Glib::ustring("gtk-edit.png"), Gtk::ALIGN_START, false, "CURVEEDITOR_EDITPOINT_HINT");
+    initButton(*editPointCustom, Glib::ustring("edit-point.png"), Gtk::ALIGN_START, false, "CURVEEDITOR_EDITPOINT_HINT");
     editCustom = Gtk::manage (new Gtk::ToggleButton());
     initButton(*editCustom, Glib::ustring("crosshair1-adjust.png"), Gtk::ALIGN_START, false, "EDIT_PIPETTE_TOOLTIP");
     editCustom->hide();
@@ -144,7 +144,7 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     }
 
     editPointNURBS = Gtk::manage (new Gtk::ToggleButton ());
-    initButton(*editPointNURBS, Glib::ustring("gtk-edit.png"), Gtk::ALIGN_START, false, "CURVEEDITOR_EDITPOINT_HINT");
+    initButton(*editPointNURBS, Glib::ustring("edit-point.png"), Gtk::ALIGN_START, false, "CURVEEDITOR_EDITPOINT_HINT");
     editNURBS = Gtk::manage (new Gtk::ToggleButton());
     initButton(*editNURBS, Glib::ustring("crosshair1-adjust.png"), Gtk::ALIGN_START, false, "EDIT_PIPETTE_TOOLTIP");
     editNURBS->hide();
