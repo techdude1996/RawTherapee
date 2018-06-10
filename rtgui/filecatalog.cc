@@ -695,7 +695,7 @@ void FileCatalog::_refreshProgressBar ()
                                                  + Glib::ustring::format(previewsLoaded) +
                                                  (filteredCount != previewsLoaded ? "]" : ")")));
         } else {
-            grid->attach_next_to(*Gtk::manage (new RTImage ("gtk-find.png")), options.mainNBVertical ? Gtk::POS_TOP : Gtk::POS_RIGHT, 1, 1);
+            grid->attach_next_to(*Gtk::manage (new RTImage ("magnifier.png")), options.mainNBVertical ? Gtk::POS_TOP : Gtk::POS_RIGHT, 1, 1);
             label = Gtk::manage (new Gtk::Label (M("MAIN_FRAME_FILEBROWSER") + " [" + Glib::ustring::format(std::fixed, std::setprecision(0), std::setw(3), (double)previewsLoaded / previewsToLoad * 100 ) + "%]" ));
             filepanel->loadingThumbs("", (double)previewsLoaded / previewsToLoad);
         }

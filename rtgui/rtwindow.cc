@@ -225,8 +225,8 @@ RTWindow::RTWindow ()
         //mainBox->pack_start (*mainNB);
 
         // filling bottom box
-        iFullscreen = new RTImage ("fullscreen.png");
-        iFullscreen_exit = new RTImage ("fullscreen-exit.png");
+        iFullscreen = new RTImage ("fullscreen-enter.png");
+        iFullscreen_exit = new RTImage ("fullscreen-leave.png");
 
         //Gtk::LinkButton* rtWeb = Gtk::manage (new Gtk::LinkButton ("http://rawtherapee.com"));   // unused... but fail to be linked anyway !?
         //Gtk::Button* preferences = Gtk::manage (new Gtk::Button (M("MAIN_BUTTON_PREFERENCES")+"..."));
@@ -448,7 +448,7 @@ void RTWindow::addEditorPanel (EditorPanel* ep, const std::string &name)
         closeb->set_focus_on_click (false);
         closeb->signal_clicked().connect ( sigc::bind (sigc::mem_fun (*this, &RTWindow::remEditorPanel), ep));
 
-        titleGrid->attach_next_to (*Gtk::manage (new RTImage ("rtwindow.png")), Gtk::POS_RIGHT, 1, 1);
+        titleGrid->attach_next_to (*Gtk::manage (new RTImage ("aperture.png")), Gtk::POS_RIGHT, 1, 1);
         titleGrid->attach_next_to (*Gtk::manage (new Gtk::Label (Glib::path_get_basename (name))), Gtk::POS_RIGHT, 1, 1);
         titleGrid->attach_next_to (*closeb, Gtk::POS_RIGHT, 1, 1);
         titleGrid->show_all ();
