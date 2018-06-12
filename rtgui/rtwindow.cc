@@ -232,7 +232,7 @@ RTWindow::RTWindow ()
         //Gtk::Button* preferences = Gtk::manage (new Gtk::Button (M("MAIN_BUTTON_PREFERENCES")+"..."));
         Gtk::Button* preferences = Gtk::manage (new Gtk::Button ());
         setExpandAlignProperties (preferences, false, false, Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER);
-        preferences->set_image (*Gtk::manage (new RTImage ("gtk-preferences.png")));
+        preferences->set_image (*Gtk::manage (new RTImage ("preferences.png")));
         preferences->set_tooltip_markup (M ("MAIN_BUTTON_PREFERENCES"));
         preferences->signal_clicked().connect ( sigc::mem_fun (*this, &RTWindow::showPreferences) );
 

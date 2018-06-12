@@ -328,7 +328,7 @@ IPTCPanel::IPTCPanel ()
 
     reset = Gtk::manage( new Gtk::Button () );  // M("IPTCPANEL_RESET")
     reset->get_style_context()->add_class("Left");
-    reset->set_image (*Gtk::manage(new RTImage ("gtk-undo-ltr.png", "gtk-undo-rtl.png")));
+    reset->set_image (*Gtk::manage(new RTImage ("undo.png", "redo.png")));
     setExpandAlignProperties(reset, true, false, Gtk::ALIGN_FILL, Gtk::ALIGN_FILL);
     bbox->attach_next_to (*reset, Gtk::POS_LEFT, 1, 1);
 
@@ -346,7 +346,7 @@ IPTCPanel::IPTCPanel ()
 
     paste = Gtk::manage( new Gtk::Button () );
     paste->get_style_context()->add_class("Right");
-    paste->set_image (*Gtk::manage(new RTImage ("edit-paste.png")));
+    paste->set_image (*Gtk::manage(new RTImage ("paste.png")));
     setExpandAlignProperties(paste, true, false, Gtk::ALIGN_FILL, Gtk::ALIGN_FILL);
     bbox->attach_next_to (*paste, Gtk::POS_RIGHT, 1, 1);
 

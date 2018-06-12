@@ -74,11 +74,11 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     copyCustom = Gtk::manage (new Gtk::Button ());
     initButton(*copyCustom, Glib::ustring("copy.png"), Gtk::ALIGN_END, true);
     pasteCustom = Gtk::manage (new Gtk::Button ());
-    initButton(*pasteCustom, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
+    initButton(*pasteCustom, Glib::ustring("paste.png"), Gtk::ALIGN_END, false);
     loadCustom = Gtk::manage (new Gtk::Button ());
     initButton(*loadCustom, Glib::ustring("folder-open.png"), Gtk::ALIGN_END, false);
     saveCustom = Gtk::manage (new Gtk::Button ());
-    initButton(*saveCustom, Glib::ustring("gtk-save-large.png"), Gtk::ALIGN_END, false);
+    initButton(*saveCustom, Glib::ustring("save.png"), Gtk::ALIGN_END, false);
 
     custombbox->attach_next_to(*editPointCustom, sideStart, 1, 1);
     custombbox->attach_next_to(*editCustom,      sideStart, 1, 1);
@@ -151,11 +151,11 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     copyNURBS = Gtk::manage (new Gtk::Button ());
     initButton(*copyNURBS, Glib::ustring("copy.png"), Gtk::ALIGN_END, true);
     pasteNURBS = Gtk::manage (new Gtk::Button ());
-    initButton(*pasteNURBS, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
+    initButton(*pasteNURBS, Glib::ustring("paste.png"), Gtk::ALIGN_END, false);
     loadNURBS = Gtk::manage (new Gtk::Button ());
     initButton(*loadNURBS, Glib::ustring("folder-open.png"), Gtk::ALIGN_END, false);
     saveNURBS = Gtk::manage (new Gtk::Button ());
-    initButton(*saveNURBS, Glib::ustring("gtk-save-large.png"), Gtk::ALIGN_END, false);
+    initButton(*saveNURBS, Glib::ustring("save.png"), Gtk::ALIGN_END, false);
 
     NURBSbbox->attach_next_to(*editPointNURBS, sideStart, 1, 1);
     NURBSbbox->attach_next_to(*editNURBS,      sideStart, 1, 1);
@@ -229,11 +229,11 @@ DiagonalCurveEditorSubGroup::DiagonalCurveEditorSubGroup (CurveEditorGroup* prt,
     copyParam = Gtk::manage (new Gtk::Button ());
     initButton(*copyParam, Glib::ustring("copy.png"), Gtk::ALIGN_END, true);
     pasteParam = Gtk::manage (new Gtk::Button ());
-    initButton(*pasteParam, Glib::ustring("edit-paste.png"), Gtk::ALIGN_END, false);
+    initButton(*pasteParam, Glib::ustring("paste.png"), Gtk::ALIGN_END, false);
     loadParam = Gtk::manage (new Gtk::Button ());
     initButton(*loadParam, Glib::ustring("folder-open.png"), Gtk::ALIGN_END, false);
     saveParam = Gtk::manage (new Gtk::Button ());
-    initButton(*saveParam, Glib::ustring("gtk-save-large.png"), Gtk::ALIGN_END, false);
+    initButton(*saveParam, Glib::ustring("save.png"), Gtk::ALIGN_END, false);
 
     parambbox->attach_next_to(*editParam,  sideStart, 1, 1);
     parambbox->attach_next_to(*copyParam,  sideEnd,   1, 1);

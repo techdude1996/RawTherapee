@@ -68,7 +68,7 @@ ProfilePanel::ProfilePanel () : storedPProfile(nullptr), lastFilename(""), image
     load->set_margin_left(2);
     setExpandAlignProperties(load, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
     save = Gtk::manage (new Gtk::Button ());
-    save->add (*Gtk::manage (new RTImage ("gtk-save-large.png")));
+    save->add (*Gtk::manage (new RTImage ("save.png")));
     save->get_style_context()->add_class("MiddleH");
     setExpandAlignProperties(save, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
     copy = Gtk::manage (new Gtk::Button ());
@@ -76,7 +76,7 @@ ProfilePanel::ProfilePanel () : storedPProfile(nullptr), lastFilename(""), image
     copy->get_style_context()->add_class("MiddleH");
     setExpandAlignProperties(copy, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
     paste = Gtk::manage (new Gtk::Button ());
-    paste->add (*Gtk::manage (new RTImage ("edit-paste.png")));
+    paste->add (*Gtk::manage (new RTImage ("paste.png")));
     paste->get_style_context()->add_class("Right");
     setExpandAlignProperties(paste, false, true, Gtk::ALIGN_CENTER, Gtk::ALIGN_FILL);
 

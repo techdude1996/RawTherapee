@@ -128,14 +128,14 @@ ExifPanel::ExifPanel () : idata (nullptr)
     buttons2->attach_next_to (*showAll, Gtk::POS_LEFT, 1, 1);
 
     reset = Gtk::manage (new Gtk::Button ()); // M("EXIFPANEL_RESET")
-    reset->set_image (*Gtk::manage (new RTImage ("gtk-undo-ltr.png", "gtk-undo-rtl.png")));
+    reset->set_image (*Gtk::manage (new RTImage ("undo.png", "redo.png")));
     reset->set_tooltip_text (M ("EXIFPANEL_RESETHINT"));
     reset->get_style_context()->add_class ("MiddleH");
     setExpandAlignProperties (reset, true, true, Gtk::ALIGN_FILL, Gtk::ALIGN_FILL);
     buttons2->attach_next_to (*reset, Gtk::POS_RIGHT, 1, 1);
 
     resetAll = Gtk::manage (new Gtk::Button ()); // M("EXIFPANEL_RESETALL")
-    resetAll->set_image (*Gtk::manage (new RTImage ("gtk-undoall-ltr.png", "gtk-undoall-rtl.png")));
+    resetAll->set_image (*Gtk::manage (new RTImage ("undo-all.png", "redo-all.png")));
     resetAll->set_tooltip_text (M ("EXIFPANEL_RESETALLHINT"));
     resetAll->get_style_context()->add_class ("Right");
     setExpandAlignProperties (resetAll, false, false, Gtk::ALIGN_FILL, Gtk::ALIGN_FILL);

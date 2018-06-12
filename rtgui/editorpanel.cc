@@ -642,7 +642,7 @@ EditorPanel::EditorPanel (FilePanel* filePanel)
     iops->set_row_spacing (2);
     iops->set_column_spacing (2);
 
-    Gtk::Image *saveButtonImage =  Gtk::manage (new RTImage ("gtk-save-large.png"));
+    Gtk::Image *saveButtonImage =  Gtk::manage (new RTImage ("save.png"));
     saveimgas = Gtk::manage (new Gtk::Button ());
     saveimgas->add (*saveButtonImage);
     saveimgas->set_tooltip_markup (M ("MAIN_BUTTON_SAVE_TOOLTIP"));
