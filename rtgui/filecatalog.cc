@@ -380,13 +380,13 @@ FileCatalog::FileCatalog (CoarsePanel* cp, ToolBar* tb, FilePanel* filepanel) :
     // thumbnail zoom
     Gtk::HBox* zoomBox = Gtk::manage( new Gtk::HBox () );
     zoomInButton  = Gtk::manage(  new Gtk::Button () );
-    zoomInButton->set_image (*Gtk::manage(new RTImage ("gtk-zoom-in.png")));
+    zoomInButton->set_image (*Gtk::manage(new RTImage ("magnifier-plus.png")));
     zoomInButton->signal_pressed().connect (sigc::mem_fun(*this, &FileCatalog::zoomIn));
     zoomInButton->set_relief (Gtk::RELIEF_NONE);
     zoomInButton->set_tooltip_markup (M("FILEBROWSER_ZOOMINHINT"));
     zoomBox->pack_end (*zoomInButton, Gtk::PACK_SHRINK);
     zoomOutButton  = Gtk::manage( new Gtk::Button () );
-    zoomOutButton->set_image (*Gtk::manage(new RTImage ("gtk-zoom-out.png")));
+    zoomOutButton->set_image (*Gtk::manage(new RTImage ("magnifier-minus.png")));
     zoomOutButton->signal_pressed().connect (sigc::mem_fun(*this, &FileCatalog::zoomOut));
     zoomOutButton->set_relief (Gtk::RELIEF_NONE);
     zoomOutButton->set_tooltip_markup (M("FILEBROWSER_ZOOMOUTHINT"));
